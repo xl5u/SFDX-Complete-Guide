@@ -1,0 +1,37 @@
+{
+    "packageDirectories": [
+        {
+            "path": "firstCoursePackage",
+            "default": true,
+            "package": "FirstCoursePackage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "definitionFile": "config/project-scratch-def.json"
+        },
+        {
+            "path": "secondCoursePackage",
+            "default": false,
+            "dependencies": [
+                {
+                    "package": "FirstCoursePackage",
+                    "versionNumber": "0.1.0.LATEST"
+                }
+            ],
+            "package": "SecondCoursePackage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "namespace": "SFDXCourseJLX",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "49.0",
+    "packageAliases": {
+        "FirstCoursePackage": "0Ho4x000000GmkoCAC",
+        "FirstCoursePackage@0.1.0-1": "04t4x000000R0l2AAC",
+        "FirstCoursePackage@0.1.0-2": "04t4x000000R0l7AAC",
+        "FirstCoursePackage@0.1.0-3": "04t4x000000R0lCAAS",
+        "FirstCoursePackage@0.1.0-4": "04t4x000000R0lHAAS",
+        "SecondCoursePackage": "0Ho4x000000GmktCAC",
+        "SecondCoursePackage@0.1.0-1": "04t4x000000R0uBAAS"
+    }
+}
